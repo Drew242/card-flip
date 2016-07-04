@@ -8,6 +8,10 @@
 		-webkit-backface-visibility
 */
 
+div {
+	display: block;
+}
+
 #portfolio:hover .portfolio-item, #portfolio.hover .portfolio-item {
 	-webkit-transform: rotateY(180deg);
 }
@@ -16,16 +20,16 @@
 	transition: 0.6s;
 	-webkit-transform-style: preserve-3d;
 
-	position: fixed;
+	position: relative;
 	margin-left: 200px;
 }
 
 .front, .back {
 	backface-visibility: hidden;
 
-	position: fixed;
+	position: absolute;
 	top: 0;
-	left: 50;
+	left: 0;
 }
 
 .front {
