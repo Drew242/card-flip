@@ -12,8 +12,17 @@ div {
 	display: block;
 }
 
+#portfolio {
+	perspective: 1000px;
+}
+
 #portfolio:hover .portfolio-item, #portfolio.hover .portfolio-item {
 	-webkit-transform: rotateY(180deg);
+}
+
+.portfolio-item, .front, .back {
+	width: 200px;
+	height: 200px;
 }
 
 .portfolio-item {
